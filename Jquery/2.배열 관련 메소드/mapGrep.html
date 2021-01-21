@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src = "C:\Users\user\Desktop\vscode\js\jquery.js"></script>
+
+    <script>
+        /*$.map()메서드
+        $.map(Array,function(매개변수1,매개변수2){
+            return 데이터;
+        });
+        배열에 저장된 요소만큼 메서드를 반복실행
+
+        2.$.grep()메서드
+        $.grep(Array,function(매개변수1,매개변수2){
+            return [true|false]
+        })
+        배열에 저장된 데이터 수만큼 메서드 반복실행,인덱스 오름차순으로 배열 데이터 불러옴 
+        */
+       
+        $(function(){
+            var arr1=[{
+                "area": "서울",
+                "name": "무대리"
+            },{
+                "area": "부산",
+                "name": "홍과장"
+            },{
+                "area":"대전",
+                "name":"박사장"
+            },{
+                "area":"서울",
+                "name":"빅마마"
+            }]
+
+        var arr2 = $.map(arr1,function(a,b){
+            if(a.area=="서울"){
+                return a;
+            }
+        });
+
+        console.log(arr2);
+        console.log("========first end=======");
+
+        var arr3 = $.grep(arr1,function(a,b){
+            if(a.area=="서울"){
+                return true;
+            }else{
+                return false;
+
+            }
+            });
+        console.log(arr3)
+        console.log("=======Second end======")
+        });
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

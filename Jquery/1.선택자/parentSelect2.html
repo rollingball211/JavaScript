@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src = "C:\Users\user\Desktop\vscode\js\jquery.js"></script>
+    <script>
+        //$("요소 선택").parents() 상위 요소를 모두 선택
+        //$("요소 선택").parents()("요소 선택") 상위 요소 중 선택한 요소만 선택.
+
+        $(function(){
+            $(".txt1").parents()
+            .css({
+                "border": "2px dashed #00f"
+            });
+        $(".txt2").parents("div")
+        .css({
+            "border" : "2px solid #f00"
+        });
+
+    });
+    </script>
+</head>
+<body>
+    <h1 class= "tlte">선택자</h1>
+    <section>
+        <div>
+            <p class="txt1">내용</p>
+
+        </div>
+    </section>
+    <section>
+        <div>
+            <p class = "txt2">내용</p>
+        </div>
+    </section>
+</body>
+</html>

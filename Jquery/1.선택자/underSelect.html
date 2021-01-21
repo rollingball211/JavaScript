@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src = "C:\Users\user\Desktop\vscode\js\jquery.js"></script>
+    <script>
+//$("기준 요소 선택1 요소선택 2 ") ex)$("#wrap  h1") id="wrap"인 요소가 기준 요소가 됨.
+ $(function(){  
+     $("#wrap h1") //#wrap이 포함하는 모든 h1요소 선택.
+     .css({
+         "background-color": "yellow",
+         "border": "2px dashed #f00"
+
+     });
+
+ });
+  
+    </script>
+</head>
+<body>
+    <div id = "wrap">
+        <h1> 인접 관계 선택자</h1>
+        <p> 내용 </p>
+        <section>
+            <h1>하위 요소 선택자</h1>
+            <p>내용 2</p>
+        </section>
+    </div>
+    
+</body>
+</html>

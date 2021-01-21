@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src = "C:\Users\user\Desktop\vscode\js\jquery.js"></script>
+    <title>Document</title>
+    <script>
+        /*
+        append() / appendTo() 선택한 요소 내의 마지막 위치에 새요소를 생성하고 추가
+       1. $(요소선택).append(새 요소)
+       2. $(새 요소).appendTo(요소 선택)
+        prepend()/prependTo() 선택한 요소 내의 앞 위치에 새 요소를 생성하고 추가.
+        위와 같음.
+        */
+    </script>
+    <script>
+        $(function(){
+            $("<li>appendTo</li>").appendTo("#listZone");
+            $("#listZone").prepend("<li>prepend</li>");
+        });
+    </script>
+</head>
+<body>
+    <ul id= "listZone">
+        <li>리스트</li>
+    </ul>
+    
+</body>
+</html>

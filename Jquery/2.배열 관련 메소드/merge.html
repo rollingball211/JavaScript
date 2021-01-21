@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src = "C:\Users\user\Desktop\vscode\js\jquery.js"></script>
+    <script>
+        /*
+        1.$.inArray(data,Array,startIndex)
+        배열에 저장된 데이터 중 지정된 데이터를 찾아 인덱스 반환
+        2.$.isArray(object)
+        지정 object가 배열이면 true 아니면 false 반환
+        3.$.merge(Array1,Array2)
+        두 배열 객체를 하나의 배열 객체로 묶음.
+        */
+       $(function(){
+        var arr1 = ["서울", "대전","부산","전주"];
+        var arr2 = ["한국", "미국","일본","중국"];
+        var obj ={
+            "name": "정부장",
+            "area": "서울"
+        }
+        var idxNum = $.inArray("부산",arr1);
+        console.log(idxNum);
+
+        var okArray1=$.isArray(arr1);
+        var okArray2=$.isArray(obj);
+        console.log(okArray1);
+        console.log(okArray2);
+
+        $.merge(arr2,arr1);
+        console.log(arr2);
+       });
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

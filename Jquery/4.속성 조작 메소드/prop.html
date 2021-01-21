@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src = "C:\Users\user\Desktop\vscode\js\jquery.js"></script>
+    <script>
+        /*
+        $("요소 선택").prop("checked|selected"); 선택한 폼 요소(체크박스,라디오버튼,선택상자)가 체크된 상태인지 ,선택된 상태인지 알수 있음.
+        $("요소 선택").prop("checked|selected" , [true|false]) 폼 요소를 선택하여 체크 또는 선택 상태를 바꿀수 있음.
+        $("요소 선택").prop(tagNmae|nodeType|selectIndex|defaultValue) 선택한 요소의 태그명&노드타입&옵션의 인덱스번호& 폼 요소에 defaultValue를 사용하면 사용자가 value속성값을 바꿔도 초기의 value속성값 가져옴.
+        */
+    </script>
+
+    <script>
+        $(function(){
+            var result_1 = $("#chk1").prop("checked");
+            console.log(result_1);
+            //id값이 chk1인 요소가 체크된 상태이면 true를 반환해 result_1에 저장. 아니라면 false.
+
+            var result_2 = $("#chk2").prop("checked");
+            console.log(result_2);
+
+            var result_2 =$("#chk3").prop("checked",true);
+            //id값이 chk3인 요소의 체크상태를 true로 바꿈
+
+            var result_3 =$("#se_1").prop("selectedIndex");
+            console.log(result_3);
+        })
+    </script>
+</head>
+<body>
+    <h1>
+        <strong>객체 조작 및 생성</strong>
+    </h1>
+    <form action ="#" id ="form_1">
+        <p>
+            <input type = "checkbox" name ="chk1" id="chk1">
+            <label for = "chk1">chk1</label>
+            <input type = "checkbox" name = "chk2" id= "chk2" checked>
+            <label for = "chk2">chk2</label>
+            <input type = "checkbox" name = "chk3" id = "chk3">
+            <label for = "chk3">chk3</label>
+        </p>
+        <p>
+            <select name ="se_1" id = "se_1">
+                <option value = "opt1">option1</option>
+                <option value = "opt2">option2</option>
+                <option value = "opt3" selected>option3</option>
+
+            </select>
+        </p>
+    </form>
+
+</body>
+</html>

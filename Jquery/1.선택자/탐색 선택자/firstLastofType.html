@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src = "C:\Users\user\Desktop\vscode\js\jquery.js"></script>
+    <script>
+        /*
+        $("요소 선택:first-of-type") 선택한 요소의 무리 중 첫번째 요소만 선택
+        $("요소 선택:last-of-type") 선택한 요소의 무리중 마지막 요소만 선택
+        */
+
+    $(function(){
+        $("li:first-of-type")
+        .css({"background-color" : "#ff0"});
+
+        $("li:last-of-type")
+        .css({"background-color" : "#0ff"});
+    });
+    </script>
+</head>
+<body>
+    <h1>탐색 선택자</h1>
+    <ul>
+        <li>내용1-1</li>
+        <li>내용1-2</li>
+        <li>내용1-3</li>
+    </ul>
+    <ul>
+        <li>내용2-1</li>
+        <li>내용2-2</li>
+        <li>내용2-3</li>
+    </ul>
+</body>
+</html>

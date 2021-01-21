@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src = "C:\Users\user\Desktop\vscode\js\jquery.js"></script>
+    <script>
+        /*
+        1.$("요소 선택").addClass("class값") 요소 선택 => class값 생성
+        2.$("요소 선택").removeClass("class값") 요소 선택 => class값 삭제
+        3.$("요소 선택").toggleClass("class값") 요소 선택 => class값이 없으면 생성 있으면 삭제
+        4.$("요소 선택").hasClass("class값")    요소 선택 => class값이 없으면 false 있으면 true 반환
+        */
+    </script>
+    <script>
+        $(function(){
+            $("#p1").addClass("aqua");
+            $("#p2").removeClass("red");
+            $("#p3").toggleClass("green");
+            $("#p4").toggleClass("green");
+            $("#p6").text($("#p5").hasClass("yellow"));
+        });
+    </script>
+    <style>
+        .aqua{ background-color: #0ff;}
+        .red {background-color: #f00;}
+        .green{background-color: #0f0;}
+        .yellow{background-color: #ff0;}
+    </style>
+</head>
+<body>
+    <p id="p1">내용1</p> 
+    <p id="p2" class="red">내용2</p>
+    <p id="p3">내용3</p>
+    <p id="p4" class="green">내용4</p>
+    <p id="p5" class="yellow">내용5</p>
+    <p id="p6"></p>   
+</body>
+</html>

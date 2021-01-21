@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src = "C:\Users\user\Desktop\vscode\js\jquery.js"></script>
+    <script>
+        /*
+        each() $.each() method.
+        1.$("요소 선택")each(function(매개변수1,매개변수2){})
+        2.$.each($("요소 선택"),function(매개변수1,매개변수2{})
+        배열에 저장된 요소의 개수만큼 메서드 반복 실행.
+        매개변수 1 = > 배열에 저장된 요소
+        매개변수 2 => 배열에 저장된 인덱스.
+
+        3.$("요소 선택").each(function(){$(this)})
+        4.$.each($("요소 선택"),function(){$(this)})
+        배열에 저장된 요소의 개수만큼 메서드를 반복 실행, 메서드를 실행할 때마다 $(this)에는 배열에 저장된 요소가 오름차순으로 저장.
+        */
+       
+        $(function(){
+            var obj = [{
+                "area":"서울"
+            },{
+                "area":"부산"
+            },{
+                "area":"전주"
+            }]
+
+            $(obj).each(function(i,o) {
+                console.log(i+ ":" ,o);
+            });
+
+            console.log("the end1");
+
+            $.each($("#menu2 li"),function(i,o) {
+                console.log(i+ ": " ,o);
+            });
+            console.log("========the end==========");
+
+            $.each($("#menu2 li"),function(i){
+                console.log(i+":",$(this))
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <h1>탐색 선택자</h1>
+    <ul id="menu1">
+        <li>내용1-1</li>
+        <li>내용1-2</li>
+        <li>내용1-3</li>
+    </ul>
+    <ul id= "menu2">
+        <li>내용2-1</li>
+        <li>내용2-2</li>
+        <li>내용2-3</li>
+    </ul>
+</body>
+</html>

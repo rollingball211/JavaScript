@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src = "C:\Users\user\Desktop\vscode\js\jquery.js"></script>
+    <title>Document</title>
+   <script>
+       //$("요소 선택").closest("요소 선택") 선택한 요소를 기준으로, 가장 가까운 상위요소 선택.
+       $(function(){
+        $(".txt1").closest("div")
+        .css({
+            "border" : "2px solid #f00"
+        });
+       });
+   </script>
+</head>
+<body>
+    
+    <h1 class = "title"> 선택자 </h1>
+    <div>
+        <div>
+            <p class = "txt1">내용</p>
+        </div>
+    </div>
+</body>
+</html>
