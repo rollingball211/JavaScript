@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //참조 변수(인스턴스 이름) = new 생성 함수()
+        var tv = new Object();
+        tv.color = "white";
+        tv.price = 300000;
+        tv.info = function(){
+            document.write("tv 색" + this.color ,"<br>");
+            document.write("tv가격"+ this.price, "<br>");
+        }
+        document.write("<h1>tv객체 메서드 호출</h1>")
+        tv.info();
+
+        var today = new Date();
+        var nowMonth = today.getMonth();
+        var nowDate = today.getDate();
+        var nowDay= today.getDay();
+
+        document.write("<h1>현재 날짜 정보</h1>");
+        document.write("현재 월" + nowMonth,"<br>");
+        document.write("현재 일"+ nowDate ,"<br>");
+        document.write("현재 요일" + nowDay,"<br>");
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
