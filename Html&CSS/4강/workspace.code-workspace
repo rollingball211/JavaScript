@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "..\\.."
+		},
+		{
+			"path": "..\\..\\..\\python"
+		}
+	],
+	"settings": {
+		"terminal.integrated.shell.windows": "C:\\Windows\\sysnative\\cmd.exe"
+	}
+}
